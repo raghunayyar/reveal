@@ -4,7 +4,7 @@
  * ownCloud - Reveal App for ownCloud
  *
  * @author Raghu Nayyar and Frank Karlitschek
- * @copyright 2012 Frank Karlitschek frank@owncloud.org
+ * @copyright 2012 Raghu Nayyar me@iraghu.com Frank Karlitschek frank@owncloud.org
  * 
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE
@@ -55,27 +55,24 @@ class Storage {
 		
 		<!doctype html>
 		<html lang="en">
-		<head>	
-		<meta charset="utf-8" />
-	<meta name="viewport" content="width=1024" />
-	<title>'.$title.'</title>
+		<head>
+		<meta charset="utf-8">
+		
+                    <title>reveal.js - HTML5 Presentations</title>
 
+                    <meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
+                    <meta name="author" content="Hakim El Hattab">
 
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+                    <meta name="apple-mobile-web-app-capable" content="yes" />
+                    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+                    <link href="'.\OCP\Util::linkToAbsolute('reveal', 'css/player.css').'" rel="stylesheet" />
+                    <link href="'.\OCP\Util::linkToAbsolute('reveal', 'css/reset.css').'" rel="stylesheet" />
+                    <link href="'.\OCP\Util::linkToAbsolute('reveal', 'css/print.css').'" rel="stylesheet" />
+                </head>
 
-	<link href="'.\OCP\Util::linkToAbsolute('reveal', 'css/player.css').'" rel="stylesheet" />
-    </head>
-
-<body class="impress-not-supported">
+        <body>	
 	
-	
-	<div class="fallback-message">
-		<p>Your browser <b>does not support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-		<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-	</div>
-	
-	
-	<div id="impress">
+            <div id="reveal">
 		
 		
 
@@ -85,47 +82,49 @@ class Storage {
 
 	public static function showFooter() {
 			
-		echo('<script src="'.\OCP\Util::linkToAbsolute('reveal', 'js/reveal.js').'"></script>
+		echo('
+                    <script src="'.\OCP\Util::linkToAbsolute('reveal', 'js/reveal.js').'"></script>
 		
-		<script>
-		
-                    Reveal.initialize({
-                        // Display controls in the bottom right corner
-                        controls: true,
+                        <script>
 
-                        // Display a presentation progress bar
-                        progress: true,
+                            Reveal.initialize({
+                                // Display controls in the bottom right corner
+                                controls: true,
 
-                        // Push each slide change to the browser history
-                        history: false,
+                                // Display a presentation progress bar
+                                progress: true,
 
-                        // Enable keyboard shortcuts for navigation
-                        keyboard: true,
+                                // Push each slide change to the browser history
+                                history: false,
 
-                        // Enable the slide overview mode
-                        overview: true,
+                                // Enable keyboard shortcuts for navigation
+                                keyboard: true,
 
-                        // Loop the presentation
-                        loop: false,
+                                // Enable the slide overview mode
+                                overview: true,
 
-                        // Number of milliseconds between automatically proceeding to the 
-                        // next slide, disabled when set to 0
-                        autoSlide: 0,
+                                // Loop the presentation
+                                loop: false,
 
-                        // Enable slide navigation via mouse wheel
-                        mouseWheel: true,
+                                // Number of milliseconds between automatically proceeding to the 
+                                // next slide, disabled when set to 0
+                                autoSlide: 0,
 
-                        // Apply a 3D roll to links on hover
-                        rollingLinks: true,
+                                // Enable slide navigation via mouse wheel
+                                mouseWheel: true,
 
-                        // Transition style
-                        // default/cube/page/concave/linear(2d)
-                        transition: "default"
-                    });
-			
-		</script>
-		
-		</body></html>
+                                // Apply a 3D roll to links on hover
+                                rollingLinks: true,
+
+                                // Transition style
+                                // default/cube/page/concave/linear(2d)
+                                transition: "default"
+                            });
+
+                        </script>
+
+                        </body>
+                    </html>
 		');
 				
 	}

@@ -3,7 +3,7 @@
 /**
  * ownCloud - Reveal App
  *
- * @author Frank Karlitschek
+ * @author Raghu Nayyar and Frank Karlitschek
  * @copyright 2011 Frank Karlitschek karlitschek@kde.org
  * 
  * This library is free software; you can redistribute it and/or
