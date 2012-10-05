@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ownCloud - Reveal App
+ * ownCloud - Reveal Application for ownCloud
  *
  * @author Raghu Nayyar and Frank Karlitschek
  * @copyright 2011 Frank Karlitschek karlitschek@kde.org
@@ -24,7 +24,7 @@
 require_once 'lib/reveal.php';
 
 OCP\User::checkLoggedIn();
-OCP\JSON::checkAppEnabled('reveal');
+OCP\App::checkAppEnabled('reveal');
 OCP\Util::addStyle( 'reveal', 'style' );
 OCP\App::setActiveNavigationEntry( 'reveal_index' );
 

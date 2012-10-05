@@ -1,10 +1,10 @@
 <?php
 
 /**
- * ownCloud - Reveal App for ownCloud
+ * ownCloud - Reveal Application for ownCloud
  *
  * @author Raghu Nayyar and Frank Karlitschek
- * @copyright 2012 Raghu Nayyar me@iraghu.com Frank Karlitschek frank@owncloud.org
+ * @copyright 2011 Frank Karlitschek karlitschek@kde.org
  * 
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE
@@ -20,13 +20,6 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  * 
  */
-
-/*
-
-Todo:
-	enable fullscreen presentation
-
-*/
 
 namespace OCA_Reveal;
 
@@ -84,7 +77,7 @@ class Storage {
 			
 		echo('
                     <script src="'.\OCP\Util::linkToAbsolute('reveal', 'js/reveal.js').'"></script>
-		
+                    <script src="'.\OCP\Util::linkToAbsolute('reveal', 'js/head.min.js').'"></script>
                         <script>
 
                             Reveal.initialize({
@@ -120,7 +113,6 @@ class Storage {
                                 // default/cube/page/concave/linear(2d)
                                 transition: "default"
                             });
-
                         </script>
 
                         </body>
