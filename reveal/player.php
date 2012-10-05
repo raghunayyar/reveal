@@ -3,8 +3,8 @@
 /**
 * ownCloud - reveal player
 *
-* @author Frank Karlitschek
-* @copyright 2012 Frank Karlitschek ink@owncloud.org
+* @author Raghu Nayyar and Frank Karlitschek
+* @copyright 2012 Raghu Nayyar me@iraghu.com Frank Karlitschek ink@owncloud.org
 *
 * This library is free software; you can redistribute it and/or
 * modify it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE
